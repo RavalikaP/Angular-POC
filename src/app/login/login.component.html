@@ -1,0 +1,32 @@
+
+<div class="modal-dialog" role="document">
+  
+  <div class="modal-content">
+    <form>
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Login</h5>
+      </div>
+      <div class="modal-body">
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+          <i class="fa fa-user fa-2x"></i>
+            </span>
+          <input type="text" class="form-control" id="name"
+            [(ngModel)]="LogginedUser.name" name="name" placeholder="User Name">
+        </div>
+        <div class="form-group input-group">
+            <span class="input-group-addon">
+            <i class="fa fa-lock fa-2x"></i> 
+            </span>           
+            <input type="password" class="form-control" id="password"
+            [(ngModel)]="LogginedUser.password" name="password" placeholder="Password">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="#">Sign Up</a>
+        <button class="btn btn-secondary" type="submit" data-dismiss="modal" (click)="Submit()">Done</button>
+        <button type="button" class="btn btn-primary">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
